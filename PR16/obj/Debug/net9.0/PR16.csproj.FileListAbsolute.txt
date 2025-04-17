@@ -1,0 +1,14 @@
+C:\C#\PR16\bin\Debug\net9.0\PR16.exe
+C:\C#\PR16\bin\Debug\net9.0\PR16.deps.json
+C:\C#\PR16\bin\Debug\net9.0\PR16.runtimeconfig.json
+C:\C#\PR16\bin\Debug\net9.0\PR16.dll
+C:\C#\PR16\bin\Debug\net9.0\PR16.pdb
+C:\C#\PR16\obj\Debug\net9.0\PR16.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\PR16\obj\Debug\net9.0\PR16.AssemblyInfoInputs.cache
+C:\C#\PR16\obj\Debug\net9.0\PR16.AssemblyInfo.cs
+C:\C#\PR16\obj\Debug\net9.0\PR16.csproj.CoreCompileInputs.cache
+C:\C#\PR16\obj\Debug\net9.0\PR16.dll
+C:\C#\PR16\obj\Debug\net9.0\refint\PR16.dll
+C:\C#\PR16\obj\Debug\net9.0\PR16.pdb
+C:\C#\PR16\obj\Debug\net9.0\PR16.genruntimeconfig.cache
+C:\C#\PR16\obj\Debug\net9.0\ref\PR16.dll
