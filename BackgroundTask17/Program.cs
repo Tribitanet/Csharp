@@ -1,8 +1,8 @@
 ﻿class Equilateral_Trapezoid
 {
-    private int base_1;
-    private int base_2;
-    private int h;
+    private double base_1;
+    private double base_2;
+    private double h;
 
 
     public Equilateral_Trapezoid(int base_1, int base_2, int h)
@@ -12,6 +12,7 @@
         this.h = h;
     }
 
+
     public Equilateral_Trapezoid()
     {
         this.base_1 = 5;
@@ -19,19 +20,64 @@
         this.h = 3;
     }
 
+
     private double Side()
     {
         double side = Math.Sqrt((this.h * this.h) + Math.Pow((this.base_1 -this.base_2)/2, 2));
         return side;
     }
-    public void output()
+
+
+    public double Base_1
     {
-        Console.WriteLine($"основания: {base_1} и {base_2}");
-        Console.WriteLine($"высота - {h}");
-        Console.WriteLine($"стороны - {this.Side()}");
+        get 
+        {
+            return this.base_1;
+        }
+        set
+        {
+            if (value <= 0)
+            {
+                Console.WriteLine("Основание 1 должно быть положительным числом");
+            }
+            else
+            {
+                this.base_1 = value;
+            }
+        }
     }
 
-    public void change(string side, int val)
+
+    public double Base_2
+    {
+        get
+        {
+            return this.base_2;
+        }
+        set
+        {
+            if (value <= 0)
+            {
+                Console.WriteLine("Основание 2 должно быть положительным числом");
+            }
+            else
+            {
+                this.base_2 = value;
+            }
+        }
+    }
+
+
+    public bool HasInscribedCircle
+    {
+        get 
+        {
+            return ((this.base_1 + this.base_2) == 2 * Side());
+        }
+    }
+
+
+    public void Change(string side, int val)
     {
          Console.WriteLine("Что хочешь поменять в своей трапеции? 1 - основание 1; 2 - основание 2; 3 - высоту.");
          side = Console.ReadLine();
@@ -43,6 +89,14 @@
             case "2": this.base_2 = val; break;
             case "3": this.h = val; break;
          }
+    }
+
+
+    public void Output()
+    {
+        Console.WriteLine($"основания: {base_1} и {base_2}");
+        Console.WriteLine($"высота - {h}");
+        Console.WriteLine($"стороны - {this.Side()}");
     }
 
 
@@ -58,7 +112,43 @@
         double P = this.base_1 + this.base_2 + this.Side() * 2;
         return P;
     }
+
+
+    public double MiddleLine()
+    {
+        double middleLine = (this.base_1 + this.base_2)/2;
+        return middleLine;
+    }
+
+    public double Diagonal()
+    {
+        double diagonal = Math.Sqrt((Math.Pow((this.base_1 + this.base_2) / 2, 2) + Math.Pow(this.h, 2)));
+        return diagonal;
+    }
+    
+
+    public double CircumscribedRadius()
+    {
+        double R = Diagonal() / (2 * Side() / this.h);
+        return R;
+    }
+
+    
+    public double? InscribedRadius()
+    {
+        if (HasInscribedCircle == true)
+        {
+            double R = Square() / (Perimeter() / 2);
+            return R;
+        }
+        else
+        {
+            Console.WriteLine("В данную трапецию нельзя вписать окружность");
+            return null;
+        }
+    }
 }
+
 
 class Program
 {
@@ -83,6 +173,8 @@ class Program
         {
             trap = new Equilateral_Trapezoid();
         }
+
+        Console.WriteLine($"Основание 1 = {trap.Base_1}");
 
         Console.WriteLine("Ты хочешь узнать периметр трапеции? y or n");
         ans = Console.ReadLine();
