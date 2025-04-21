@@ -1,4 +1,5 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -11,12 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundTask17", "BackgroundTask17\BackgroundTask17.csproj", "{854D5D8A-239B-4977-8AF7-2C728175C841}"
 EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6BBDA2DF-59BF-4785-8BCF-CBBDD894590A}
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -74,5 +69,11 @@ Global
 		{854D5D8A-239B-4977-8AF7-2C728175C841}.Release|x64.Build.0 = Release|Any CPU
 		{854D5D8A-239B-4977-8AF7-2C728175C841}.Release|x86.ActiveCfg = Release|Any CPU
 		{854D5D8A-239B-4977-8AF7-2C728175C841}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BBDA2DF-59BF-4785-8BCF-CBBDD894590A}
 	EndGlobalSection
 EndGlobal
