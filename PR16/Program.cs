@@ -144,8 +144,15 @@
     {
         get
         {
-            
-        }
+            if (this.x >= this.y && this.x < 10 && this.Y > 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }   
     }
 }
 
@@ -159,14 +166,14 @@ class Program
         
         Console.WriteLine("Ты хочешь создать точку сам? y/n");
         ans = Console.ReadLine();
-        if (ans = "y")
+        if (ans == "y")
         {
             Console.WriteLine("Введи x своей точки");
-            x = Convert.ToInt16(Console.Readline());
+            x = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("Введи y своей точки");
-            y = Convert.ToInt16(Console.Readline());
+            y = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("Введи z своей точки");
-            z = Convert.ToInt16(Console.Readline());
+            z = Convert.ToInt16(Console.ReadLine());
 
             point1 = new Point3D(x, y, z);
         }
@@ -177,7 +184,7 @@ class Program
          
         Console.WriteLine("Ты хочещь сдвинуть точку? y/n");
         ans = Console.ReadLine();
-        if (ans = "y")
+        if (ans == "y")
         {
             Console.WriteLine("По какой оси?");
             axis = Console.ReadLine();
@@ -197,6 +204,5 @@ class Program
         point2.Output();
         Console.WriteLine($"Длина радиус-вектора 1 точки - {point1.RVector()}, длина радиус-вектора 2 точки - {point2.RVector()}");
         point3 = point1.Summ(point2);
-
     }
 }
