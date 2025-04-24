@@ -169,11 +169,11 @@ class Program
         if (ans == "y")
         {
             Console.WriteLine("Введи x своей точки");
-            x = Convert.ToInt16(Console.ReadLine());
+            x = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введи y своей точки");
-            y = Convert.ToInt16(Console.ReadLine());
+            y = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введи z своей точки");
-            z = Convert.ToInt16(Console.ReadLine());
+            z = Convert.ToDouble(Console.ReadLine());
 
             point1 = new Point3D(x, y, z);
         }
@@ -189,7 +189,7 @@ class Program
             Console.WriteLine("По какой оси?");
             axis = Console.ReadLine();
             Console.WriteLine("На сколько");
-            val = Convert.ToInt16(Console.ReadLine());
+            val = Convert.ToDouble(Console.ReadLine());
             
             point1.Output();
             point1.Move(axis, val);
