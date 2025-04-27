@@ -13,8 +13,7 @@
     {
         foreach (int i in list)
         {
-            Console.Write(i);
-            Console.Write(" ");
+            Console.Write($"{i}");
         }
         Console.WriteLine();
     }

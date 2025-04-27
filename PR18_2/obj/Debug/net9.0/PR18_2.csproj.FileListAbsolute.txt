@@ -1,0 +1,15 @@
+C:\C#\Csharp\PR18_2\bin\Debug\net9.0\PR18_2.exe
+C:\C#\Csharp\PR18_2\bin\Debug\net9.0\PR18_2.deps.json
+C:\C#\Csharp\PR18_2\bin\Debug\net9.0\PR18_2.runtimeconfig.json
+C:\C#\Csharp\PR18_2\bin\Debug\net9.0\PR18_2.dll
+C:\C#\Csharp\PR18_2\bin\Debug\net9.0\PR18_2.pdb
+C:\C#\Csharp\PR18_2\obj\Debug\net9.0\PR18_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\Csharp\PR18_2\obj\Debug\net9.0\PR18_2.AssemblyInfoInputs.cache
+C:\C#\Csharp\PR18_2\obj\Debug\net9.0\PR18_2.AssemblyInfo.cs
+C:\C#\Csharp\PR18_2\obj\Debug\net9.0\PR18_2.csproj.CoreCompileInputs.cache
+C:\C#\Csharp\PR18_2\obj\Debug\net9.0\PR18_2.sourcelink.json
+C:\C#\Csharp\PR18_2\obj\Debug\net9.0\PR18_2.dll
+C:\C#\Csharp\PR18_2\obj\Debug\net9.0\refint\PR18_2.dll
+C:\C#\Csharp\PR18_2\obj\Debug\net9.0\PR18_2.pdb
+C:\C#\Csharp\PR18_2\obj\Debug\net9.0\PR18_2.genruntimeconfig.cache
+C:\C#\Csharp\PR18_2\obj\Debug\net9.0\ref\PR18_2.dll
