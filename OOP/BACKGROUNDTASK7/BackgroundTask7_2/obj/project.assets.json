@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C#\\OOP\\BACKGROUNDTASK7\\BackgroundTask7_2\\BackgroundTask7_2.csproj",
+      "projectUniqueName": "C:\\C#\\Csharp\\OOP\\BACKGROUNDTASK7\\BackgroundTask7_2\\BackgroundTask7_2.csproj",
       "projectName": "BackgroundTask7_2",
-      "projectPath": "C:\\C#\\OOP\\BACKGROUNDTASK7\\BackgroundTask7_2\\BackgroundTask7_2.csproj",
+      "projectPath": "C:\\C#\\Csharp\\OOP\\BACKGROUNDTASK7\\BackgroundTask7_2\\BackgroundTask7_2.csproj",
       "packagesPath": "C:\\Users\\Tribitanet\\.nuget\\packages\\",
-      "outputPath": "C:\\C#\\OOP\\BACKGROUNDTASK7\\BackgroundTask7_2\\obj\\",
+      "outputPath": "C:\\C#\\Csharp\\OOP\\BACKGROUNDTASK7\\BackgroundTask7_2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

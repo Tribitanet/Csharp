@@ -1,11 +1,11 @@
-﻿class Equilateral_Trapezoid
+﻿class EquilateralTrapezoid
 {
     private double base_1;
     private double base_2;
     private double h;
 
 
-    public Equilateral_Trapezoid(int base_1, int base_2, int h)
+    public EquilateralTrapezoid(double base_1, double base_2, double h)
     {
         this.base_1 = base_1;
         this.base_2 = base_2;
@@ -13,7 +13,7 @@
     }
 
 
-    public Equilateral_Trapezoid()
+    public EquilateralTrapezoid()
     {
         this.base_1 = 5;
         this.base_2 = 7;
@@ -21,10 +21,13 @@
     }
 
 
-    private double Side()
-    {
-        double side = Math.Sqrt((this.h * this.h) + Math.Pow((this.base_1 -this.base_2)/2, 2));
-        return side;
+    private double Side
+    {   
+        get
+        {
+            double side = Math.Sqrt((this.h * this.h) + Math.Pow((this.base_1 -this.base_2)/2, 2));
+            return side;
+        }
     }
 
 
@@ -68,11 +71,31 @@
     }
 
 
+    public double H
+    {
+        get
+        {
+            return this.h;
+        }
+        set
+        {
+            if (value <= 0)
+            {
+                Console.WriteLine("Высота должна быть положительной");
+            }
+            else
+            {
+                this.h = value;
+            }
+        }
+    }
+
+
     public bool HasInscribedCircle
     {
         get 
         {
-            return ((this.base_1 + this.base_2) == 2 * Side());
+            return ((this.base_1 + this.base_2) == 2 * this.Side);
         }
     }
 
@@ -96,21 +119,7 @@
     {
         Console.WriteLine($"основания: {base_1} и {base_2}");
         Console.WriteLine($"высота - {h}");
-        Console.WriteLine($"стороны - {this.Side()}");
-    }
-
-
-    public double Square()
-    {
-        double S = ((this.base_1 + this.base_2)/2) * this.h;
-        return S;
-    }
-
-
-    public double Perimeter()
-    {
-        double P = this.base_1 + this.base_2 + this.Side() * 2;
-        return P;
+        Console.WriteLine($"стороны - {this.Side}");
     }
 
 
@@ -119,6 +128,21 @@
         double middleLine = (this.base_1 + this.base_2)/2;
         return middleLine;
     }
+
+
+    public double Square()
+    {
+        double S = this.MiddleLine() * this.h;
+        return S;
+    }
+
+
+    public double Perimeter()
+    {
+        double P = this.base_1 + this.base_2 + this.Side * 2;
+        return P;
+    }
+
 
     public double Diagonal()
     {
@@ -129,9 +153,9 @@
 
     public double CircumscribedRadius()
     {
-        double R = Diagonal() / (2 * Side() / this.h);
+        double R = Diagonal() / (2 * this.Side / this.h);
         return R;
-    }
+     }
 
     
     public double? InscribedRadius()
@@ -155,7 +179,7 @@ class Program
     static void Main()
     {
         int base_1, base_2, side;
-        Equilateral_Trapezoid trap;
+        EquilateralTrapezoid trap;
         Console.WriteLine("Ты хочешь создать р/б трапецию сам? y or n");
         string ans = Console.ReadLine();
         if (ans == "y")
@@ -167,14 +191,15 @@ class Program
             Console.WriteLine("Введите длину боковой стороны");
             side = Convert.ToInt16(Console.ReadLine());
 
-            trap = new Equilateral_Trapezoid(base_1, base_2, side);
+            trap = new EquilateralTrapezoid(base_1, base_2, side);
         }
         else
         {
-            trap = new Equilateral_Trapezoid();
+            trap = new EquilateralTrapezoid();
         }
 
-        Console.WriteLine($"Основание 1 = {trap.Base_1}");
+        Console.WriteLine("Твоя трапеция:");
+        trap.Output();
 
         Console.WriteLine("Ты хочешь узнать периметр трапеции? y or n");
         ans = Console.ReadLine();
@@ -190,6 +215,37 @@ class Program
         {
             Console.Write("Площадь трапеции равна: ");
             Console.WriteLine(trap.Square());
+        }
+
+        Console.WriteLine("Ты хочешь узнать среднюю линию трапеции? y or n");
+        ans = Console.ReadLine();
+        if (ans == "y")
+        {
+            Console.Write("Средняя линия трапеции равна: ");
+            Console.WriteLine(trap.MiddleLine());
+        }
+
+        Console.WriteLine("Ты хочешь узнать диагональ трапеции? y or n");
+        ans = Console.ReadLine();
+        if (ans == "y")
+        {
+            Console.Write("Диагональ трапеции равна: ");
+            Console.WriteLine(trap.Diagonal());
+        }
+
+        Console.WriteLine("Ты хочешь узнать радиус окружности описанной вокруг трапеции? y or n");
+        ans = Console.ReadLine();
+        if (ans == "y")
+        {
+            Console.Write("Радиус окружности равен: ");
+            Console.WriteLine(trap.CircumscribedRadius());
+        }
+
+        Console.WriteLine("Ты хочешь узнать радиус окружности вписанной в трапецию? y or n");
+        ans = Console.ReadLine();
+        if (ans == "y")
+        {
+            Console.WriteLine(trap.InscribedRadius());
         }
     }
 }
