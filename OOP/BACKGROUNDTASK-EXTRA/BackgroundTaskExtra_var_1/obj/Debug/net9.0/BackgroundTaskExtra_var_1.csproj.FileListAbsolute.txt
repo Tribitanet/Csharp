@@ -1,0 +1,15 @@
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\obj\Debug\net9.0\BackgroundTaskExtra_var_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\obj\Debug\net9.0\BackgroundTaskExtra_var_1.AssemblyInfoInputs.cache
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\obj\Debug\net9.0\BackgroundTaskExtra_var_1.AssemblyInfo.cs
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\obj\Debug\net9.0\BackgroundTaskExtra_var_1.csproj.CoreCompileInputs.cache
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\obj\Debug\net9.0\BackgroundTaskExtra_var_1.sourcelink.json
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\bin\Debug\net9.0\BackgroundTaskExtra_var_1.exe
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\bin\Debug\net9.0\BackgroundTaskExtra_var_1.deps.json
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\bin\Debug\net9.0\BackgroundTaskExtra_var_1.runtimeconfig.json
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\bin\Debug\net9.0\BackgroundTaskExtra_var_1.dll
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\bin\Debug\net9.0\BackgroundTaskExtra_var_1.pdb
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\obj\Debug\net9.0\BackgroundTaskExtra_var_1.dll
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\obj\Debug\net9.0\refint\BackgroundTaskExtra_var_1.dll
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\obj\Debug\net9.0\BackgroundTaskExtra_var_1.pdb
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\obj\Debug\net9.0\BackgroundTaskExtra_var_1.genruntimeconfig.cache
+C:\C#\Csharp\OOP\BACKGROUNDTASK-EXTRA\BackgroundTaskExtra_var_1\obj\Debug\net9.0\ref\BackgroundTaskExtra_var_1.dll
